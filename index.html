@@ -1,61 +1,215 @@
-Privacy Policy for SpectraBot
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — SpectraBot</title>
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .header-meta {
+            font-size: 1em;
+            opacity: 0.95;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .header-meta p {
+            margin: 0;
+        }
+        
+        .content {
+            padding: 60px 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .section-content {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .section-content p {
+            margin-bottom: 12px;
+        }
+        
+        .subsection {
+            margin-left: 20px;
+            margin-bottom: 12px;
+            padding-left: 15px;
+            border-left: 3px solid #667eea;
+        }
+        
+        .subsection strong {
+            color: #333;
+        }
+        
+        footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .header {
+                padding: 40px 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 40px 20px;
+            }
+            
+            .header-meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Privacy Policy for SpectraBot</h1>
+      <div class="header-meta">
+        <p>Effective Date: 11/11/2025</p>
+        <p>Contact: <a href="mailto:hello@spectrabot.site">hello@spectrabot.site</a></p>
+      </div>
+    </header>
 
-    Effective Date: 11/11/2025
+    <main class="content">
+      <section class="section">
+        <h2>A. Information We Collect</h2>
+        <div class="section-content">
+          <table style="width:100%">
+            <tr>
+              <th>Data Type</th>
+              <th>Purpose of Collection</th>
+              <th>Retention Period</th>
+            </tr>
+            <tr>
+              <td>Discord User ID</td>
+              <td>Identifying premium users, caching user experience/level data, and tracking blacklisted users.</td>
+              <td>Retained until user leaves all shared Discord servers or requests deletion.</td>
+            </tr>
+            <tr>
+              <td>Discord Guild (Server) ID</td>
+              <td>Storing server-specific configurations (e.g., Automod settings, premium status, license keys, log channel IDs).</td>
+              <td>Retained until the bot is removed from the server.</td>
+            </tr>
+            <tr>
+              <td>License Keys/Premium Status</td>
+              <td>Verifying access to premium features and setting expiry dates.</td>
+              <td>Retained for the duration of the license.</td>
+            </tr>
+            <tr>
+              <td>Usage Data</td>
+              <td>Tracking command usage statistics for service improvement and troubleshooting.</td>
+              <td>Retained for up to 90 days.</td>
+            </tr>
+            <tr>
+              <td>Automod Keywords</td>
+              <td>Storing custom words provided by server administrators for the bot's Automod features.</td>
+              <td>Retained until removed by a server administrator or the bot is removed from the server.</td>
+            </tr>
+          </table>
+        </div>
+      </section>
 
-    Contact: hello@spectrabot.site
+      <section class="section">
+        <h2>B. Third-Party Services</h2>
+        <div class="section-content">
+          <p>SpectraBot uses the following third-party services, which may store or process the data mentioned above:</p>
+          <div class="subsection">
+            <p><strong>Google Firebase:</strong> Used for persistent storage of configuration and user data. Their <a href="https://firebase.google.com/support/privacy">Privacy Policy</a> governs their practices.</p>
+            <p><strong>Better Uptime:</strong> Used for monitoring bot status and uptime. Data sent is non-identifying (e.g., connection metrics).</p>
+            <p><strong>Discord API:</strong> All data is collected via the Discord API and is subject to the <a href="https://discord.com/privacy">Discord Privacy Policy</a>.</p>
+          </div>
+        </div>
+      </section>
 
-A. Information We Collect
-<table style="width:100%">
-  <tr>
-    <th>Data Type</th>
-    <th>Purpose of Collection</th>
-    <th>Retention Period</th>
-  </tr>
-  <tr>
-    <td>Discord User ID</td>
-    <td>Identifying premium users, caching user experience/level data, and tracking blacklisted users.</td>
-    <td>Retained until user leaves all shared Discord servers or requests deletion.</td>
-  </tr>
-  <tr>
-    <td>Discord Guild (Server) ID</td>
-    <td>Storing server-specific configurations (e.g., Automod settings, premium status, license keys, log channel IDs).</td>
-    <td>Retained until the bot is removed from the server.</td>
-  </tr>
-  <tr>
-  	<td>License Keys/Premium Status</td>
-    <td>Verifying access to premium features and setting expiry dates.</td>
-    <td>Retained for the duration of the license.</td>
-  </tr>
-  <tr>
-  	<td>Usage Data</td>
-    <td>Tracking command usage statistics for service improvement and troubleshooting.</td>
-    <td>Retained for up to 90 days.</td>
-  </tr>
-  <tr>
-  	<td>Automod Keywords</td>
-    <td>Storing custom words provided by server administrators for the bot's Automod features.</td>
-    <td>Retained until removed by a server administrator or the bot is removed from the server.</td>
-  </tr>
-</table>
+      <section class="section">
+        <h2>C. Data Security</h2>
+        <div class="section-content">
+          <p>We implement commercially acceptable methods to protect your data, including storing sensitive data like User IDs in encrypted databases (Google Firebase) and limiting access only to essential bot operations. However, no method of transmission over the internet is 100% secure.</p>
+        </div>
+      </section>
 
-B. Third-Party Services
+      <section class="section">
+        <h2>D. Your Rights &amp; Data Deletion</h2>
+        <div class="section-content">
+          <p>You have the right to request access to and deletion of any personally identifiable data the bot holds on you.</p>
+          <div class="subsection">
+            <p><strong>Server Data:</strong> Server administrators can remove all stored Guild Data by simply removing the bot from the Discord server.</p>
+            <p><strong>User Data:</strong> To request the permanent deletion of your User ID data, please contact us at <a href="mailto:data@spectrabot.site">data@spectrabot.site</a>. We will confirm and process your request within 30 days.</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-SpectraBot uses the following third-party services, which may store or process the data mentioned above:
-
-    Google Firebase: Used for persistent storage of configuration and user data. Their <a href="https://firebase.google.com/support/privacy"> Privacy Policy</a> governs their practices.
-
-    Better Uptime: Used for monitoring bot status and uptime. Data sent is non-identifying (e.g., connection metrics).
-
-    Discord API: All data is collected via the Discord API and is subject to the <a href="https://discord.com/privacy"> Discord Privacy Policy</a>.
-
-C. Data Security
-
-We implement commercially acceptable methods to protect your data, including storing sensitive data like User IDs in encrypted databases (Google Firebase) and limiting access only to essential bot operations. However, no method of transmission over the internet is 100% secure.
-
-D. Your Rights & Data Deletion
-
-You have the right to request access to and deletion of any personally identifiable data the bot holds on you.
-
-    Server Data: Server administrators can remove all stored Guild Data by simply removing the bot from the Discord server.
-
-    User Data: To request the permanent deletion of your User ID data, please contact us at data@spectrabot.site. We will confirm and process your request within 30 days.
+    <footer>
+      © SpectraBot — For questions, contact <a href="mailto:hello@spectrabot.site">hello@spectrabot.site</a>
+    </footer>
+  </div>
+</body>
+</html>
